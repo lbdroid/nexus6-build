@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- microg nogapps gmscore-->
+ <project name="microg/android_packages_apps_GmsCore" path="external/gmscore" remote="github" />
+
+</manifest>
