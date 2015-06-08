@@ -8,6 +8,9 @@ if [[ -z $MAKETYPE ]]; then
   MAKETYPE="bacon"
 fi
 
+#add repo to path:
+export PATH=/var/lib/jenkins/jobs/nexus6-omni-5.1/bin:$PATH
+
 #Cleanup
 rm -f $WORKSPACE/*.zip $WORKSPACE/*.img
 rm -f $WORKSPACE/archive/*
