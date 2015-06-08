@@ -125,7 +125,7 @@ if [ "0" -ne "$?" ]; then exit 1; fi
 for f in $(ls $OUT/cm-*.zip $OUT/omni-*.zip 2>/dev/null)
 do
 	targetf=`basename $f | sed "s/.zip$/-${BUILD_NO}.zip/g"`
-	#ln $f $WORKSPACE/archive/$targetf
+#	ln $f $WORKSPACE/archive/$targetf
 #	mkdir $WORKSPACE/archive/unziptmp
 #	unzip $f -d $WORKSPACE/archive/unziptmp/
 #	for FILE in $WORKSPACE/archive/unziptmp/system/app/*.odex; do zip -d `echo "$FILE" | sed -e "s/odex/apk/"` classes.dex; done
@@ -142,7 +142,7 @@ do
 #	rm -rf $WORKSPACE/archive/unziptmp
 #	zip -g -r $f system/
 #	if [[ -z $ZIPPASSCODE ]]; then
-#		mv $f $WORKSPACE/archive/$targetf
+		mv $f $WORKSPACE/archive/$targetf
 #	else
 #		zip -P $ZIPPASSCODE -j $WORKSPACE/archive/$targetf $f
 #	fi
