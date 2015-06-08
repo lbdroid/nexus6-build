@@ -38,7 +38,7 @@ $JOB_ROOT/bin/repo forall -c "git reset --hard"
 $JOB_ROOT/bin/repo sync
 
 #gerrit picks
-wget https://raw.github.com/lbdroid/nexus6-build/$BUILD_BRANCH/repopick.py -O $JOB_ROOT/bin/repopick.py
+wget https://github.com/omnirom/android_build/raw/$REPO_BRANCH/tools/repopick.py -O $JOB_ROOT/bin/repopick.py
 python $JOB_ROOT/bin/repopick.py $GERRIT_CHANGES
 
 #cherries
