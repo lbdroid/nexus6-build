@@ -32,7 +32,7 @@ cd $JOB_ROOT/android/$BUILD_ROOT
 $JOB_ROOT/bin/repo init -u $REPO_URI -b $REPO_BRANCH
 if [ ! -d .repo/local_manifests ]; then mkdir .repo/local_manifests; fi
 wget https://raw.github.com/lbdroid/nexus6-build/$BUILD_BRANCH/$MANIFEST.xml -O .repo/local_manifests/local.xml
-rm -f .repo/local_manifests/roomservice.xml
+#rm -f .repo/local_manifests/roomservice.xml
 $JOB_ROOT/bin/repo forall -c "git am --abort" >/dev/null 2>&1
 $JOB_ROOT/bin/repo forall -c "git reset --hard"
 $JOB_ROOT/bin/repo sync
