@@ -3,5 +3,7 @@
 
  <!-- microg nogapps gmscore-->
  <project name="microg/android_packages_apps_GmsCore" path="external/gmscore" remote="github" revision="master" />
+ <project name="DonkeyCoyota/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="android-5.1" />
+ <!--project name="omnirom/android_kernel_moto_shamu" path="kernel/moto/shamu" remote="github" revision="android-5.1" /-->
 
 </manifest>
