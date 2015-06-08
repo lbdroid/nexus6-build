@@ -2,6 +2,6 @@
 <manifest>
 
  <!-- microg nogapps gmscore-->
- <project name="microg/android_packages_apps_GmsCore" path="external/gmscore" remote="github" />
+ <project name="microg/android_packages_apps_GmsCore" path="external/gmscore" remote="github" revision="master" />
 
 </manifest>
